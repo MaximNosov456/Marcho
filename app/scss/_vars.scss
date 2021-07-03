@@ -1,0 +1,19 @@
+$accent: #fe3e57;
+$bg: #f6f6f6;
+
+%roboto-400 {
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+}
+
+%flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{numbers});
+}
