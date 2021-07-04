@@ -26,3 +26,13 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.main-btn {
+  box-shadow: 0 7px 20px rgba(255, 17, 48, 0.3);
+  background-color: $accent;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.8px;
+  padding: 13px 25px;
+  @extend %roboto-400;
+}
