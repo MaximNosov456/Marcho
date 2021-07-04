@@ -1,0 +1,92 @@
+.footer {
+    background-color: #f6f6f6;
+    &__top {
+        @extend %flex-sb;
+        padding: 76px 0 41px;
+    }
+
+    &__block-1 {
+        max-width: 240px;
+        width: 100%;
+    }
+    &__block-2,
+    &__block-3 {
+        max-width: 165px;
+        width: 100%;
+    }
+    &__block-4 {
+        flex: 0 0 480px;
+    }
+    &__logo {
+        display: inline-block;
+        margin-bottom: 33px;
+    }
+
+    &__title {
+        color: $title-color;
+        font-size: 22px;
+        line-height: 30px;
+        @extend %roboto-500;
+        margin-bottom: 40px;
+    }
+    &__address {
+        font-style: normal;
+        margin-bottom: 15px;
+    }
+    &__phone {
+        display: block;
+        margin: 15px 0 37px;
+    }
+    &__social {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__social-item {
+        transition: all 0.4s;
+        &:hover path {
+            fill: $accent;
+        }
+    }
+    &__social-item + &__social-item {
+        margin-left: 19px;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__input {
+        padding: 0 15px 0 17px;
+        width: 320px;
+    }
+
+    &__btn {
+        margin-left: 10px;
+    }
+
+    &__bottom {
+        @extend %flex-sb;
+        align-items: center;
+        min-height: 75px;
+        font-size: 12px;
+        border-top: 1px solid #ececec;
+    }
+
+    &__payments-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__payments {
+        display: flex;
+    }
+
+    &__payments-item {
+        margin-left: 25px;
+    }
+}

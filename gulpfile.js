@@ -1,12 +1,13 @@
 const { src, dest, watch, parallel, series } = require("gulp");
-const scss = require("gulp-sass");
+let scss = require('gulp-sass')(require('sass'));
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const del = require('del');
 const browserSync = require("browser-sync").create();
-const  ttf2woff2 = require('gulp-ttf2woff2');
+const ttf2woff = require('gulp-ttf2woff');
+const ttf2woff2 = require('gulp-ttf2woff2');
 
 function browsersync () {
   browserSync.init({
@@ -57,9 +58,15 @@ function images () {
 }
 
 function fontsConverter () {
-  return src(['fonts/*.ttf'])
+  return src(['app/fonts/*.ttf'])
+  .pipe(ttf2woff())
+  .pipe(dest('app/fonts/'));
+}
+
+function fontsConverter2 () {
+  return src(['app/fonts/*.ttf'])
   .pipe(ttf2woff2())
-  .pipe(gulp.dest('fonts/'));
+  .pipe(dest('app/fonts/'));
 }
 
 function watching() {
@@ -81,11 +88,10 @@ function cleanDist () {
 
  exports.styles = styles;
  exports.images = images;
- exports.fontsConverter = fontsConverter;
  exports.scripts = scripts;
  exports.watching = watching;
  exports.browsersync = browsersync;
  exports.cleanDist = cleanDist;
  exports.build = series(cleanDist, build, images) ;
-
+ exports.fontsConverterFull = series(fontsConverter, fontsConverter2)
  exports.default = parallel(styles,scripts,watching, browsersync);

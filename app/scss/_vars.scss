@@ -1,9 +1,30 @@
 $accent: #fe3e57;
-$bg: #f6f6f6;
+$main-color: #8d8d8d;
+$title-color: #29282d;
 
 %roboto-400 {
-    font-family: "Roboto-Regular";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
+}
+
+%roboto-500 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+%roboto-700 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+%quicksand-400 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+%quicksand-500 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
 %flex-sb {
