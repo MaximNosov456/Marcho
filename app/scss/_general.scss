@@ -36,3 +36,10 @@ body {
   padding: 13px 25px;
   @extend %roboto-400;
 }
+
+.title {
+  color: $title-color;
+  @extend %roboto-700;
+  font-size: 58px;
+  line-height: 68px;
+}
