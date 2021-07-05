@@ -28,14 +28,9 @@ function styles() {
 }
 
 function scripts() {
-  return src(['node_modules/jquery/dist/jquery.js',
-  'node_modules/slick-carousel/slick/slick.js',
-  'node_modules/rateyo/src/jquery.rateyo.js',
-  'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
-  'node_modules/jquery-validation/dist/jquery.validate.js',
-  'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
-  'node_modules/wow.js/dist/wow.js',
-      'app/js/main.js'])
+  return src(['node_modules/rateyo/src/jquery.rateyo.js',
+              'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+              'app/js/main.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))

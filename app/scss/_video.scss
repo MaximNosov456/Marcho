@@ -1,0 +1,45 @@
+.video {
+    background-image: url("../images/video-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 120px 0;
+    &__inner {
+        @extend %flex-sb;
+        align-items: center;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/video-img.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 480px;
+        flex: 0 0 535px;
+    }
+
+    &__info {
+        flex: 0 1 570px;
+    }
+
+    &__subtitle {
+        color: $accent;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 60px;
+        letter-spacing: 3.2px;
+    }
+}

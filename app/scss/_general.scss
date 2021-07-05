@@ -38,8 +38,16 @@ body {
 }
 
 .title {
+  text-align: center;
   color: $title-color;
   @extend %roboto-700;
   font-size: 58px;
   line-height: 68px;
+  margin-bottom: 30px;
+}
+
+.text {
+  max-width: 525px;
+  text-align: center;
+  margin: 0 auto 60px;
 }
