@@ -35,5 +35,16 @@ $(function() {
           .eq($(this).index())
           .addClass('tab-content--active');
       });
+
+
+      // Rate
+
+      $(".products__rate").rateYo({
+        starWidth: "18px",
+        normalFill: "#ccccce",
+        ratedFill: "#ffc35b",
+        readOnly: true
+       
+      });
   
 })
