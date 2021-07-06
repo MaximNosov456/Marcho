@@ -9,9 +9,6 @@
 </head>
 
 <body>
-    <button class="hamburger">
-        <span></span>
-    </button>
 
     <header class="header">
         <div class="container">
@@ -90,6 +87,36 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="modal">
+            <div class="container">
+                <div class="modal__links">
+                    <a class="modal__link" href="#">REGISTER</a>
+                    <a class="modal__link modal__link--active" href="#">LOGIN</a>
+                </div>
+                <form class="modal__form" action="#">
+                    <div class="modal__form-group">
+                        <label class="modal__label">
+                            Username or email address*
+                            <input class="modal__input" type="text">
+                        </label>
+                    </div>
+                    <div class="modal__form-group">
+                        <label class="modal__label">
+                            Password*
+                            <input class="modal__input" type="password">
+                        </label>
+                    </div>
+                    <label class="modal__label modal__label--checkbox">
+
+                        <input class="modal__input--checkbox" type="checkbox">
+                        Remember me
+                    </label>
+                    <button class="modal__btn">LOG IN</button>
+                    <a class="modal__password" href="#">Lost your password?</a>
+                </form>
             </div>
         </section>
 

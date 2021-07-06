@@ -1,0 +1,27 @@
+.top {
+    &__container {
+        max-width: 1700px;
+        margin: 0 auto;
+        background-image: url("../images/top-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 360px;
+    }
+
+    &__title {
+        color: #15181d;
+        font-size: 48px;
+        line-height: 1.5;
+        @extend %roboto-400;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+}
