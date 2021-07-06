@@ -32,6 +32,16 @@ $title-color: #29282d;
     justify-content: space-between;
 }
 
+%second-btn {
+    display: inline-block;
+    margin-top: 60px;
+    letter-spacing: 3.2px;
+    color: $title-color;
+    text-transform: uppercase;
+    padding: 19px 29px;
+    border: 1px solid $accent;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{numbers});
 }

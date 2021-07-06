@@ -46,5 +46,59 @@ $(function() {
         readOnly: true
        
       });
+
+      // Timer
+
+      function getTimeRemaining(endtime){
+        const total = Date.parse(endtime) - Date.parse(new Date())
+        const days = Math.floor(total/ (1000*60*60*24))
+        const hours = Math.floor((total/(1000*60*60))%24)
+        const minutes = Math.floor((total/(1000*60))%60)
+        const seconds = Math.floor((total/1000)%60)
+    
+        return {
+            total,
+            days,
+            hours,
+            minutes,
+            seconds
+        }
+    }
+    function getZero (num) {
+        if (num<=9) {
+            return `0${num}`
+        }else {
+            return num
+        }
+    }
+    function setClock (selector, endtime) {
+        const timer =document.querySelector(selector),
+        days=timer.querySelector('.days'),
+        hours=timer.querySelector('.hours'),
+        minutes=timer.querySelector('.minutes'),
+        seconds=timer.querySelector('.seconds'),
+        timeInterval=setInterval(updateClock,1000);
+    
+        updateClock()
+    
+        function updateClock () {
+            const timeObj=getTimeRemaining(endtime)
+    
+            days.textContent=getZero(timeObj.days)
+            hours.textContent=getZero(timeObj.hours)
+            minutes.textContent=getZero(timeObj.minutes)
+            seconds.textContent=getZero(timeObj.seconds)
+    
+            if(timeObj.total<=0) {
+                clearInterval(timeInterval)
+            }
+        }
+    
+        
+    }
+    
+    const deadline = $('.promo__timer').attr('data-time')
+    setClock('.promo__timer', deadline)
+    
   
 })
