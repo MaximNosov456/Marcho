@@ -36,3 +36,23 @@ body {
   padding: 13px 25px;
   @extend %roboto-400;
 }
+
+.title {
+  text-align: center;
+  color: $title-color;
+  @extend %roboto-700;
+  font-size: 58px;
+  line-height: 68px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.text {
+  max-width: 525px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.center {
+  text-align: center;
+}
