@@ -1,0 +1,23 @@
+.page-404 {
+    padding: 120px 0;
+    &__inner {
+        @extend %flex-sb;
+        align-items: center;
+    }
+
+    &__content {
+        flex: 0 1 523px;
+    }
+
+    &__title {
+        text-align: left;
+        text-transform: none;
+        font-size: 48px;
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        max-width: 455px;
+        margin-bottom: 55px;
+    }
+}
