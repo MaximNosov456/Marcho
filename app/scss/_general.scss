@@ -102,3 +102,53 @@ body {
     }
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+  &__arrow {
+    position: relative;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      width: 6px;
+      height: 11px;
+    }
+  }
+
+  &__prev {
+    margin-right: 45px;
+    padding-left: 15px;
+    &::before {
+      background-image: url("../images/arrow-prev.svg");
+      left: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item + &__list-item {
+    margin-left: 30px;
+  }
+
+  &__list-item--active {
+    color: $accent;
+  }
+
+  &__list-link {
+  }
+
+  &__next {
+    margin-left: 45px;
+    padding-right: 15px;
+    &::before {
+      background-image: url("../images/arrow-next.svg");
+      right: 0;
+    }
+  }
+}

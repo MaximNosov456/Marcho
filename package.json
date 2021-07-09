@@ -20,6 +20,8 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
+    "jquery-form-styler": "^2.0.2",
     "jquery-validation": "^1.19.3",
     "jquery.maskedinput": "^1.4.1",
     "rateyo": "^2.3.5",

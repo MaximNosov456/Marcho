@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <button class="hamburger">
+        <span></span>
+    </button>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="header__logo-img" src="images/logo.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">SHOP</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">PAGE</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">BLOG</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">
+                            <img class="header__nav-img" src="images/user-ico.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">
+                            <img class="header__nav-img" src="images/search-ico.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link favourite" href="#">
+                            <img class="header__nav-img" src="images/heart-ico.svg" alt="">
+                            <span class="favourite__num">3</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link cart" href="#">
+                            <img class="header__nav-img" src="images/cart-ico.svg" alt="">
+                            <span class="cart__num">7</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="top">
+            <div class="top__container">
+                <div class="container">
+                    <div class="top__inner">
+                        <h2 class="top__title">SHOP PAGE</h2>
+                        <div class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__list-item breadcrumbs__list-item--home">
+                                    <a class="breadcrumbs__list-link" href="#">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <span class="breadcrumbs__list-link">
+                                        Shop page
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop__inner">
+                    <aside class="shop-aside filter">
+                        <div class="filter-search filter__item">
+                            <h4 class="filter__title">Search</h4>
+                            <form class="filter-search__form" action="#">
+                                <input type="text" class="filter-search__input" placeholder="Search your keyword....">
+                                <button class="filter-search__btn">
+                                    <img src="images/search-icon-white.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="filter__item filter-price">
+                            <h4 class="filter__title">Price Filter</h4>
+                            <form class="filter-price__form" action="#">
+                                <input class="filter-price__input js-range-slider" type="text" data-min="0"
+                                    data-max="999" data-from="200" data-to="800">
+                                <label class="filter-price__label">
+                                    <span class="filter-price__text">
+                                        Price:$<span class="filter-price__from"></span> -
+                                        $<span class="filter-price__to"></span>
+                                    </span>
+
+                                    <button class="main-btn">Filter</button>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter__item filter-color">
+                            <h4 class="filter__title">Color Filter</h4>
+                            <form class="filter-color__form" action="#">
+                                <label class="filter-color__label">
+                                    <div class="filter-color__text">
+                                        Blue
+                                        (<span class="filter-color__num">15</span>)
+                                    </div>
+                                    <div class="filter-color__inputs">
+                                        <input class="filter-color__checkbox" type="checkbox">
+                                        <span class="filter-color__styled filter-color__styled--blue"></span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <div class="filter-color__text">
+                                        Red
+                                        (<span class="filter-color__num">09</span>)
+                                    </div>
+                                    <div class="filter-color__inputs">
+                                        <input class="filter-color__checkbox" type="checkbox">
+                                        <span class="filter-color__styled filter-color__styled--red"></span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <div class="filter-color__text">
+                                        Green
+                                        (<span class="filter-color__num">28</span>)
+                                    </div>
+                                    <div class="filter-color__inputs">
+                                        <input class="filter-color__checkbox" type="checkbox">
+                                        <span class="filter-color__styled filter-color__styled--green"></span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <div class="filter-color__text">
+                                        Orange
+                                        (<span class="filter-color__num">11</span>)
+                                    </div>
+                                    <div class="filter-color__inputs">
+                                        <input class="filter-color__checkbox" type="checkbox">
+                                        <span class="filter-color__styled filter-color__styled--orange"></span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <div class="filter-color__text">
+                                        Black
+                                        (<span class="filter-color__num">05</span>)
+                                    </div>
+                                    <div class="filter-color__inputs">
+                                        <input class="filter-color__checkbox" type="checkbox">
+                                        <span class="filter-color__styled filter-color__styled--black"></span>
+                                    </div>
+                                </label>
+                                <label class="filter-color__label">
+                                    <div class="filter-color__text">
+                                        Purple
+                                        (<span class="filter-color__num">21</span>)
+                                    </div>
+                                    <div class="filter-color__inputs">
+                                        <input class="filter-color__checkbox" type="checkbox">
+                                        <span class="filter-color__styled filter-color__styled--purple"></span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter__item filter-size">
+                            <h4 class="filter__title">Size Filter</h4>
+                            <form class="filter-size__form" action="#">
+                                <label class="filter-size__label">
+                                    <input class="filter-size__checkbox" type="checkbox">
+                                    <span class="filter-size__styled"></span>
+                                    <span class="filter-size__text">X-small</span>
+                                </label>
+                                <label class="filter-size__label">
+                                    <input class="filter-size__checkbox" type="checkbox">
+                                    <span class="filter-size__styled"></span>
+                                    <span class="filter-size__text">Small</span>
+                                </label>
+                                <label class="filter-size__label">
+                                    <input class="filter-size__checkbox" type="checkbox">
+                                    <span class="filter-size__styled"></span>
+                                    <span class="filter-size__text">Medium</span>
+                                </label>
+                                <label class="filter-size__label">
+                                    <input class="filter-size__checkbox" type="checkbox">
+                                    <span class="filter-size__styled"></span>
+                                    <span class="filter-size__text">Large</span>
+                                </label>
+                                <label class="filter-size__label">
+                                    <input class="filter-size__checkbox" type="checkbox">
+                                    <span class="filter-size__styled"></span>
+                                    <span class="filter-size__text">XXL</span>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter__item filter-category">
+                            <h4 class="filter__title">Color Filter</h4>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__checkbox" type="checkbox">
+                                    <div class="filter-category__styled">
+                                        <span class="filter-category__name">Woman</span>
+                                        <span class="filter-category__num">48</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__checkbox" type="checkbox">
+                                    <div class="filter-category__styled">
+                                        <span class="filter-category__name">Man</span>
+                                        <span class="filter-category__num">30</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__checkbox" type="checkbox">
+                                    <div class="filter-category__styled">
+                                        <span class="filter-category__name">Sale Products</span>
+                                        <span class="filter-category__num">92</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__checkbox" type="checkbox">
+                                    <div class="filter-category__styled">
+                                        <span class="filter-category__name">Fashion</span>
+                                        <span class="filter-category__num">121</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__checkbox" type="checkbox">
+                                    <div class="filter-category__styled">
+                                        <span class="filter-category__name">Hot Dresses</span>
+                                        <span class="filter-category__num">52</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__checkbox" type="checkbox">
+                                    <div class="filter-category__styled">
+                                        <span class="filter-category__name">Accessories</span>
+                                        <span class="filter-category__num">88</span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter__item filter-popular">
+                            <h4 class="filter__title">Popular Tags</h4>
+                            <form class="filter-popular__form" action="#">
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <div class="filter-popular__styled">
+                                        Sweetshirt
+                                    </div>
+                                </label>
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <div class="filter-popular__styled">
+                                        Man Accessories
+                                    </div>
+                                </label>
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <div class="filter-popular__styled">
+                                        Fashion
+                                    </div>
+                                </label>
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <div class="filter-popular__styled">
+                                        Polo
+                                    </div>
+                                </label>
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <div class="filter-popular__styled">
+                                        T-Shirt
+                                    </div>
+                                </label>
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <div class="filter-popular__styled">
+                                        Jewellery
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+                    </aside>
+
+                    <div class="shop-content">
+                        <div class="shop-filters">
+                            <div class="shop-filters__buttons">
+                                <span class="shop-filters__text">View</span>
+                                <button class="shop-filters__btn active button-grid">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <g>
+                                            <g>
+                                                <path fill="#8d8d8d"
+                                                    d="M0 3.75h3.75V0H0zM5.625 15h3.75v-3.75h-3.75zM0 15h3.75v-3.75H0zm0-5.625h3.75v-3.75H0zm5.625 0h3.75v-3.75h-3.75zM11.25 0v3.75H15V0zM5.625 3.75h3.75V0h-3.75zm5.625 5.625H15v-3.75h-3.75zm0 5.625H15v-3.75h-3.75z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button class="shop-filters__btn button-list">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15">
+                                        <g>
+                                            <g>
+                                                <path fill="#8d8d8d"
+                                                    d="M.007 0h4.422v4.172H.007zm5.828 0h14.159v4.172H5.835zM.007 5.413h4.422v4.172H.007zm5.828 0h14.159v4.172H5.835zM.007 10.828h4.422v4.171H.007zm5.828 0h14.159v4.171H5.835z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="shop-filters__sort">
+                                <form class="shop-filters__select-form" action="#">
+                                    <select name="" id="" class="shop-filters__select select-style">
+                                        <option value="" class="shop-filters__option">Sort By Default</option>
+                                        <option value="" class="shop-filters__option">1</option>
+                                        <option value="" class="shop-filters__option">2</option>
+                                        <option value="" class="shop-filters__option">3</option>
+                                    </select>
+                                    <select name="" id="" class="shop-filters__select select-style">
+                                        <option value="" class="shop-filters__option">Show 9</option>
+                                        <option value="" class="shop-filters__option">2</option>
+                                        <option value="" class="shop-filters__option">3</option>
+                                        <option value="" class="shop-filters__option">4</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="shop__items">
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="products__img-wrapper">
+                                    <img class="products__img" src="images/product-1.jpg" alt="product img">
+                                    <ul class="products__nav">
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-search" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-cart" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                                                    viewBox="0 0 16 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M15.999 17.294c.004.017.004.033.004.05 0 1.468-1.345 2.662-3 2.662H3.007c-1.655 0-3-1.194-3-2.663 0-.016.004-.032.004-.05L1.156 4.397a.548.548 0 0 1 .547-.504h2.354A3.953 3.953 0 0 1 8.005.002a3.953 3.953 0 0 1 3.948 3.89h2.354a.55.55 0 0 1 .547.504zM8.005 1.106a2.849 2.849 0 0 0-2.844 2.786h5.688a2.849 2.849 0 0 0-2.844-2.786zm4.998 17.796c1.034 0 1.88-.687 1.896-1.534L13.8 5.001h-1.847v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H5.157v1.677a.55.55 0 0 1-.552.552.55.55 0 0 1-.552-.552V5H2.206L1.111 17.368c.016.847.858 1.534 1.896 1.534z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="products__nav-item">
+                                            <a class="products__nav-link products__nav-favourite" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#29282d"
+                                                                d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__main-wrapper">
+                                    <div class="products__content-wrapper">
+                                        <div class="products__rate" data-rateyo-rating='4.7'></div>
+                                        <h5 class="products__name">White Polo Men’s T-Shirt</h5>
+                                        <div class="products__prices">
+                                            <div class="products__price-new">$34.00</div>
+                                            <div class="products__price-old">$27.00</div>
+                                        </div>
+                                    </div>
+                                    <p class="products__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod
+                                        utlitoi labore et dolore magna aliqua.
+                                    </p>
+                                    <button class="products__btn">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <a class="pagination__arrow pagination__prev" href="#">PREVIOUS</a>
+                            <ul class="pagination__list">
+                                <li class="pagination__list-item">
+                                    <a class="pagination__list-link" href="#">1</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a class="pagination__list-link" href="#">2</a>
+                                </li>
+                                <li class="pagination__list-item pagination__list-item--active">
+                                    <a class="pagination__list-link" href="#">3</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <span class="pagination__list-link">....</span>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a class="pagination__list-link" href="#">10</a>
+                                </li>
+                            </ul>
+                            <a class="pagination__arrow pagination__next" href="#">NEXT</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__block footer__block-1">
+                    <a class="footer__logo logo" href="#">
+                        <img class="header__logo-img" src="images/logo.png" alt="logo">
+                    </a>
+                    <address class="footer__item footer__address">No. 342 - London Oxford Street,
+                        012 United States</address>
+                    <a class="footer__item footer__email" href="mailto:Youremail@gmail.com">Youremail@gmail.com</a>
+                    <a class="footer__item footer__phone" href="tel:+02838388393">+0283 838 8393</a>
+                    <ul class="footer__social">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1">
+                                    <g>
+                                        <path
+                                            d="M 10.394531 18 L 10.394531 9.789062 L 13.148438 9.789062 L 13.5625 6.589844 L 10.394531 6.589844 L 10.394531 4.546875 C 10.394531 3.621094 10.648438 2.988281 11.980469 2.988281 L 13.671875 2.988281 L 13.671875 0.125 C 13.378906 0.0859375 12.375 0 11.207031 0 C 8.761719 0 7.089844 1.492188 7.089844 4.230469 L 7.089844 6.589844 L 4.328125 6.589844 L 4.328125 9.789062 L 7.089844 9.789062 L 7.089844 18 Z M 10.394531 18 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="14pt" height="14pt" viewBox="0 0 14 14" version="1.1">
+                                    <g>
+                                        <path
+                                            d="M 14 2.660156 C 13.480469 2.886719 12.925781 3.039062 12.347656 3.113281 C 12.941406 2.757812 13.394531 2.199219 13.609375 1.527344 C 13.054688 1.855469 12.441406 2.089844 11.789062 2.222656 C 11.261719 1.660156 10.511719 1.3125 9.691406 1.3125 C 8.101562 1.3125 6.824219 2.601562 6.824219 4.183594 C 6.824219 4.410156 6.84375 4.628906 6.890625 4.835938 C 4.503906 4.722656 2.394531 3.578125 0.976562 1.835938 C 0.726562 2.265625 0.582031 2.757812 0.582031 3.285156 C 0.582031 4.28125 1.09375 5.160156 1.855469 5.671875 C 1.394531 5.664062 0.941406 5.527344 0.558594 5.316406 C 0.558594 5.328125 0.558594 5.339844 0.558594 5.351562 C 0.558594 6.746094 1.554688 7.902344 2.859375 8.167969 C 2.625 8.234375 2.371094 8.265625 2.105469 8.265625 C 1.921875 8.265625 1.738281 8.253906 1.5625 8.214844 C 1.933594 9.351562 2.992188 10.1875 4.246094 10.214844 C 3.269531 10.980469 2.027344 11.4375 0.6875 11.4375 C 0.453125 11.4375 0.226562 11.429688 0 11.398438 C 1.269531 12.21875 2.777344 12.6875 4.402344 12.6875 C 9.683594 12.6875 12.570312 8.3125 12.570312 4.519531 C 12.570312 4.394531 12.566406 4.269531 12.5625 4.148438 C 13.132812 3.746094 13.609375 3.238281 14 2.660156 Z M 14 2.660156 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="16pt" height="16pt" viewBox="0 0 16 16" version="1.1">
+                                    <g>
+                                        <path
+                                            d="M 3.722656 5.148438 L 0.511719 5.148438 C 0.371094 5.148438 0.253906 5.261719 0.253906 5.40625 L 0.253906 15.722656 C 0.253906 15.867188 0.371094 15.980469 0.511719 15.980469 L 3.722656 15.980469 C 3.867188 15.980469 3.984375 15.867188 3.984375 15.722656 L 3.984375 5.40625 C 3.984375 5.261719 3.867188 5.148438 3.722656 5.148438 Z M 3.722656 5.148438 " />
+                                        <path
+                                            d="M 2.121094 0.0195312 C 0.949219 0.0195312 0 0.96875 0 2.136719 C 0 3.304688 0.949219 4.253906 2.121094 4.253906 C 3.289062 4.253906 4.238281 3.300781 4.238281 2.136719 C 4.238281 0.96875 3.289062 0.0195312 2.121094 0.0195312 Z M 2.121094 0.0195312 " />
+                                        <path
+                                            d="M 11.894531 4.890625 C 10.605469 4.890625 9.652344 5.445312 9.070312 6.074219 L 9.070312 5.40625 C 9.070312 5.261719 8.957031 5.148438 8.8125 5.148438 L 5.738281 5.148438 C 5.59375 5.148438 5.480469 5.261719 5.480469 5.40625 L 5.480469 15.722656 C 5.480469 15.867188 5.59375 15.980469 5.738281 15.980469 L 8.941406 15.980469 C 9.085938 15.980469 9.203125 15.867188 9.203125 15.722656 L 9.203125 10.617188 C 9.203125 8.898438 9.667969 8.226562 10.867188 8.226562 C 12.175781 8.226562 12.277344 9.300781 12.277344 10.707031 L 12.277344 15.722656 C 12.277344 15.867188 12.394531 15.980469 12.535156 15.980469 L 15.742188 15.980469 C 15.882812 15.980469 16 15.867188 16 15.722656 L 16 10.0625 C 16 7.507812 15.511719 4.890625 11.894531 4.890625 Z M 11.894531 4.890625 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="16pt" height="16pt" viewBox="0 0 16 16" version="1.1">
+                                    <g>
+                                        <path
+                                            d="M 14 7 L 14 5 L 13 5 L 13 7 L 11 7 L 11 8 L 13 8 L 13 10 L 14 10 L 14 8 L 16 8 L 16 7 Z M 14 7 " />
+                                        <path
+                                            d="M 5 7 L 5 9 L 7.828125 9 C 7.414062 10.164062 6.304688 11 5 11 C 3.347656 11 2 9.652344 2 8 C 2 6.347656 3.347656 5 5 5 C 5.71875 5 6.40625 5.257812 6.941406 5.722656 L 8.257812 4.214844 C 7.355469 3.433594 6.199219 3 5 3 C 2.242188 3 0 5.242188 0 8 C 0 10.757812 2.242188 13 5 13 C 7.757812 13 10 10.757812 10 8 L 10 7 Z M 5 7 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="16pt" height="16pt" viewBox="0 0 16 16" version="1.1">
+                                    <g>
+                                        <path
+                                            d="M 8.21875 0 C 3.832031 0 1.5 2.8125 1.5 5.875 C 1.5 7.296875 2.292969 9.066406 3.566406 9.628906 C 3.929688 9.792969 3.878906 9.59375 4.191406 8.402344 C 4.214844 8.300781 4.203125 8.214844 4.125 8.121094 C 2.308594 6.019531 3.769531 1.699219 7.957031 1.699219 C 14.019531 1.699219 12.886719 10.085938 9.011719 10.085938 C 8.015625 10.085938 7.269531 9.304688 7.503906 8.332031 C 7.789062 7.179688 8.347656 5.9375 8.347656 5.101562 C 8.347656 3.003906 5.222656 3.316406 5.222656 6.097656 C 5.222656 6.957031 5.527344 7.535156 5.527344 7.535156 C 5.527344 7.535156 4.519531 11.601562 4.335938 12.359375 C 4.019531 13.644531 4.375 15.726562 4.40625 15.90625 C 4.425781 16.003906 4.539062 16.035156 4.601562 15.953125 C 4.699219 15.824219 5.914062 14.089844 6.257812 12.835938 C 6.378906 12.378906 6.886719 10.523438 6.886719 10.523438 C 7.222656 11.128906 8.191406 11.636719 9.21875 11.636719 C 12.285156 11.636719 14.5 8.941406 14.5 5.601562 C 14.488281 2.398438 11.746094 0 8.21875 0 Z M 8.21875 0 " />
+                                    </g>
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block footer__block-2">
+                    <h4 class="footer__title">Useful Links</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">About Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Help & Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block footer__block-3">
+                    <h4 class="footer__title">My Account</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">My Account</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">My Cart</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">My WIshlist</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Registration</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Check Out</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block footer__block-4">
+                    <h4 class="footer__title">Subscribe Our Newsletter</h4>
+                    <p class="footer__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                    </p>
+                    <form class="footer__form">
+                        <input class="footer__input" type="text" placeholder="Your email address">
+                        <button class="footer__btn  main-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copy">© 2019 CodeAstrology. All Rights Reserved.</div>
+                <div class="footer__payments-wrapper">
+                    <p class="footer__payments-text">We Accept</p>
+                    <ul class="footer__payments">
+                        <li class="footer__payments-item">
+                            <a class="footer__payments-link" href="#">
+                                <img src="images/payment-1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__payments-item">
+                            <a class="footer__payments-link" href="#">
+                                <img src="images/payment-2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__payments-item">
+                            <a class="footer__payments-link" href="#">
+                                <img src="images/payment-3.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='js/main.min.js'></script>
+</body>
+
+</html>

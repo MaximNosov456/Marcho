@@ -84,6 +84,7 @@
     &__name {
         font-size: 22px;
         margin-bottom: 20px;
+        color: $title-color;
     }
 
     &__prices {
@@ -98,6 +99,14 @@
     &__price-old {
         color: #ccccce;
         text-decoration: line-through;
+    }
+
+    &__text {
+        display: none;
+    }
+
+    &__btn {
+        display: none;
     }
     &__more {
         @extend %second-btn;
